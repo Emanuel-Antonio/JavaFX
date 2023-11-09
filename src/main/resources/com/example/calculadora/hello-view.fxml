@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="529.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.HelloController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="650.0" prefWidth="620.0">
+            <children>
+                <Label fx:id="operacao" alignment="CENTER_RIGHT" minHeight="66.0" minWidth="366.0" prefHeight="151.0" prefWidth="610.0" textAlignment="RIGHT">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button fx:id="limpar" mnemonicParsing="false" onAction="#limpar" prefHeight="40.0" prefWidth="455.0" text="C" textFill="#f80000">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="dividir" mnemonicParsing="false" onAction="#addDividir" prefHeight="40.0" prefWidth="145.0" text="÷" textFill="#12b548">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button fx:id="sete" mnemonicParsing="false" onAction="#addSete" prefHeight="40.0" prefWidth="145.0" text="7">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="oito" mnemonicParsing="false" onAction="#addOito" prefHeight="40.0" prefWidth="145.0" text="8">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="nove" mnemonicParsing="false" onAction="#addNove" prefHeight="40.0" prefWidth="145.0" text="9">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="multiplicar" mnemonicParsing="false" onAction="#addMultiplicar" prefHeight="40.0" prefWidth="145.0" text="X" textFill="#12b548">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button fx:id="quatro" mnemonicParsing="false" onAction="#addQuatro" prefHeight="40.0" prefWidth="145.0" text="4">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="cinco" mnemonicParsing="false" onAction="#addCinco" prefHeight="40.0" prefWidth="145.0" text="5">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="seis" mnemonicParsing="false" onAction="#addSeis" prefHeight="40.0" prefWidth="145.0" text="6">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="subtrair" mnemonicParsing="false" onAction="#addSubtrair" prefHeight="40.0" prefWidth="145.0" text="-" textFill="#12b548">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button fx:id="um" mnemonicParsing="false" onAction="#addUm" prefHeight="40.0" prefWidth="145.0" text="1">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="dois" mnemonicParsing="false" onAction="#addDois" prefHeight="40.0" prefWidth="145.0" text="2">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="tres" mnemonicParsing="false" onAction="#addTres" prefHeight="40.0" prefWidth="145.0" text="3">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="somar" mnemonicParsing="false" onAction="#addSoma" prefHeight="40.0" prefWidth="145.0" text="+" textFill="#12b548">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button fx:id="barraMenos" mnemonicParsing="false" onAction="#addBarraMenos" prefHeight="40.0" prefWidth="145.0" text="+/-">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="zero" mnemonicParsing="false" onAction="#addZero" prefHeight="40.0" prefWidth="145.0" text="0">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="virgula" mnemonicParsing="false" onAction="#addvirgula" prefHeight="40.0" prefWidth="145.0" text=",">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="igualdade" mnemonicParsing="false" onAction="#operar" prefHeight="40.0" prefWidth="145.0" text="=" textFill="#15b24c">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <effect>
+                <ColorAdjust brightness="-0.02" contrast="0.14" hue="-0.31" saturation="-0.16" />
+            </effect>
+        </VBox>
+    </children>
+</GridPane>
