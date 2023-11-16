@@ -61,6 +61,10 @@ public class TempController implements Initializable {
     @FXML
     void voltarOnAcrion(ActionEvent event) {
         HelloApplication.telaScreen("main");
+        entrada.setText("");
+        saida.setText("");
+        selecao2.setValue("");
+        selecao1.setValue("");
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
