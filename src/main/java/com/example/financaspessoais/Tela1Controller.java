@@ -35,6 +35,7 @@ public class Tela1Controller {
         Tela2Controller tela2Controller = loader.getController();
         tela2Controller.setSalario(Double.parseDouble(renda.getText().toString()));
         tela2Controller.setNomeUsuario(nome.getText().toString());
+        tela2Controller.preencherTabela(Double.parseDouble(renda.getText().toString()));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
