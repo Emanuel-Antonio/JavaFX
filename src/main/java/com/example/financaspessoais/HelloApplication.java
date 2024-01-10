@@ -13,9 +13,10 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("tela1.fxml"));
         Scene scene = new Scene(root);
-        stage.setMinWidth(600);
-        stage.setMinHeight(400);
+        stage.setWidth(850);
+        stage.setHeight(600);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

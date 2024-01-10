@@ -33,12 +33,20 @@ public class Tela1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("tela2.fxml"));
         root = loader.load();
         Tela2Controller tela2Controller = loader.getController();
+
         tela2Controller.setSalario(Double.parseDouble(renda.getText().toString()));
-        tela2Controller.setNomeUsuario(nome.getText().toString());
-        tela2Controller.preencherTabela(Double.parseDouble(renda.getText().toString()));
+        tela2Controller.setNomeUsuario("olá, " + nome.getText().toString() + "!");
+        tela2Controller.preencherGrafico1(Double.parseDouble(renda.getText().toString()));
+        tela2Controller.preencherGrafico2(Double.parseDouble(renda.getText().toString()));
+        tela2Controller.preencherGrafico3(Double.parseDouble(renda.getText().toString()));
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setWidth(850);
+        stage.setResizable(false);
+        stage.setHeight(600);
         stage.show();
+
     }
 }

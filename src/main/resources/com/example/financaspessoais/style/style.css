@@ -1,0 +1,10 @@
+.Button {
+    -fx-background-color:  #008cff;
+    -fx-background-radius: 15;
+    -fx-text-fill: #ffffff;
+
+}
+
+.Button:hover {
+    -fx-background-color: #1e88eb;
+}
